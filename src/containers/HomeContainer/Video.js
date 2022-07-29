@@ -56,24 +56,31 @@ const VideoPlayer = () => {
   };
 
   return (
-    <View>
+    <View style={styles.container}>
       <Video
-        onEnd={onEnd}
-        onLoad={onLoad}
-        onLoadStart={onLoadStart}
+        repeat
+        //        onEnd={onEnd}
+        //        onLoad={onLoad}
+        //        onLoadStart={onLoadStart}
         posterResizeMode={'cover'}
-        onProgress={onProgress}
-        paused={paused}
+        //      onProgress={onProgress}
+        //       paused={paused}
         ref={ref => (videoPlayer.current = ref)}
         resizeMode={'cover'}
         source={video}
-        style={styles.backgroundVideo}
+        //        style={styles.backgroundVideo}
+        style={StyleSheet.absoluteFill}
       />
     </View>
   );
 };
 
 const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
   backgroundVideo: {
     height: 250,
     width: '100%',

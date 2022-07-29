@@ -19,7 +19,7 @@ const HomeStack = navigation => {
       }}>
       <Stack.Screen
         name="Home"
-        component={Video}
+        component={Home}
         options={{
           title: 'home screen',
           headerLeft: () => (
