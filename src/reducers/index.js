@@ -2,7 +2,7 @@ import {persistCombineReducers} from 'redux-persist';
 
 import {reducer as network} from 'react-native-offline';
 
-import AsyncStorage from '@react-native-community/async-storage';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const persistConfig = {
   key: 'root',
